@@ -8,7 +8,7 @@ namespace SimpleESP
     {
         private Configuration _configuration ;
         private ICheckBox _checkESPActivatedPlayers, _checkESPActivatedResources;
-        private ICheckBox _checkResOre, _checkResFiber, _checkResTree, _checkResStone;
+        private ICheckBox _checkResOre, _checkResFiber, _checkResTree, _checkResStone, _checkResLeather;
         private ICheckBox _checkT2, _checkT3,
             _checkT4, _checkT4_1, _checkT4_2, _checkT4_3,
             _checkT5, _checkT5_1, _checkT5_2, _checkT5_3,
@@ -76,6 +76,12 @@ namespace SimpleESP
                 _checkResStone.SetPosition(-50, 55, 0);
                 _checkResStone.SetText("Stone");
                 _checkResStone.SetSize(50, 25);
+
+                _checkResLeather = Factories.CreateGuiCheckBox();
+                _panel.Add(_checkResLeather);
+                _checkResLeather.SetPosition(-50, 35, 0);
+                _checkResLeather.SetText("Leather");
+                _checkResLeather.SetSize(50, 25);
 
                 _checkT2 = Factories.CreateGuiCheckBox();
                 _panel.Add(_checkT2);
@@ -222,6 +228,7 @@ namespace SimpleESP
                     _configuration.ResFiber = _checkResFiber.IsSelected();
                     _configuration.ResStone = _checkResStone.IsSelected();
                     _configuration.ResTree = _checkResTree.IsSelected();
+                    _configuration.ResLeather = _checkResLeather.IsSelected();
                     _configuration.ResT2 = _checkT2.IsSelected();
                     _configuration.ResT3 = _checkT3.IsSelected();
                     _configuration.ResT4 = _checkT4.IsSelected();

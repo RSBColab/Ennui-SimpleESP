@@ -13,6 +13,7 @@ namespace SimpleESP
         public bool ResFiber { get; set; }
         public bool ResTree { get; set; }
         public bool ResStone { get; set; }
+        public bool ResLeather { get; set; }
         public bool ResT2 { get; set; }
         public bool ResT3 { get; set; }
         public bool ResT4 { get; set; }
