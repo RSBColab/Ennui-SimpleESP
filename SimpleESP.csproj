@@ -38,7 +38,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\ObjectHarvestable.cs" />
+    <Compile Include="Class\ListTierFilterDrop.cs" />
+    <Compile Include="Class\Only1ChargeFilter.cs" />
+    <Compile Include="Class\OnlyThisIds.cs" />
+    <Compile Include="Class\ListTierFilter.cs" />
     <Compile Include="Configuration.cs" />
     <Compile Include="ConfigState.cs" />
     <Compile Include="WorkState.cs" />
@@ -51,7 +54,6 @@
       <Name>Albion Script API</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

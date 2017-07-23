@@ -7,12 +7,10 @@ namespace SimpleESP
     public class ESPScript: StateScript
     {
         private Configuration _configuration;
-        private Timer _timer;
-
+        
         public override bool OnStart(IScriptEngine se)
         {
             _configuration = new Configuration();
-            _timer = new Timer();
 
             Logging.Log("Load ESP Script", LogLevel.Info);
 
